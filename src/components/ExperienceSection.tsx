@@ -1,4 +1,4 @@
-import { Briefcase, Users, Lightbulb, Code, Building2 } from "lucide-react";
+import { Users } from "lucide-react";
 import { useState } from "react";
 
 interface Experience {
@@ -17,36 +17,9 @@ const experiences: Experience[] = [
     title: "Assistant Animation",
     company: "Emeis - EHPAD",
     period: "Été 2025",
-    description: "Animation d'activités ludiques et créatives auprès des résidents. Développement de compétences en communication, empathie et organisation d'événements.",
-    skills: ["Communication", "Organisation", "Travail d'équipe", "Créativité"],
+    description: "Animation d'activités ludiques et créatives auprès des résidents. Accompagnement des personnes âgées dans leurs activités quotidiennes et organisation d'événements.",
+    skills: ["Communication", "Empathie", "Organisation", "Travail d'équipe"],
     icon: <Users className="text-primary" size={24} />,
-  },
-  {
-    id: 2,
-    title: "Projet Académique - Développement Web",
-    company: "ISEN",
-    period: "2024 - 2025",
-    description: "Création d'applications web full-stack dans le cadre de projets scolaires. Utilisation de HTML, CSS, JavaScript et bases de données SQL.",
-    skills: ["HTML/CSS", "JavaScript", "SQL", "Git"],
-    icon: <Code className="text-primary" size={24} />,
-  },
-  {
-    id: 3,
-    title: "Projet Robotique",
-    company: "ISEN",
-    period: "2024",
-    description: "Conception et programmation d'un robot autonome en équipe. Apprentissage de la programmation embarquée en C/C++.",
-    skills: ["C/C++", "Électronique", "Travail d'équipe", "Résolution de problèmes"],
-    icon: <Lightbulb className="text-primary" size={24} />,
-  },
-  {
-    id: 4,
-    title: "Stage d'observation",
-    company: "Entreprise locale",
-    period: "2023",
-    description: "Découverte du monde professionnel et des métiers de l'informatique. Observation des processus de développement logiciel.",
-    skills: ["Découverte métier", "Observation", "Curiosité"],
-    icon: <Building2 className="text-primary" size={24} />,
   },
 ];
 
