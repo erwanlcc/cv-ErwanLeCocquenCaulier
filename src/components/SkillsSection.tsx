@@ -10,13 +10,13 @@ interface Skill {
 
 const skills: Skill[] = [
   { name: "C / C++", level: 75, category: "Programmation", icon: <Terminal size={18} /> },
+  { name: "PHP", level: 60, category: "Programmation", icon: <Terminal size={18} /> },
   { name: "SQL", level: 70, category: "Base de données", icon: <Database size={18} /> },
   { name: "HTML", level: 85, category: "Web", icon: <Code2 size={18} /> },
   { name: "CSS", level: 80, category: "Web", icon: <Code2 size={18} /> },
   { name: "JavaScript", level: 65, category: "Web", icon: <Globe size={18} /> },
   { name: "Apache (Serveur Web)", level: 60, category: "DevOps", icon: <Server size={18} /> },
   { name: "Git", level: 70, category: "Outils", icon: <Settings size={18} /> },
-  { name: "Python", level: 55, category: "Programmation", icon: <Terminal size={18} /> },
 ];
 
 const categories = ["Tous", "Programmation", "Web", "Base de données", "DevOps", "Outils"];
@@ -122,12 +122,11 @@ const SkillBar = ({ skill, isVisible, delay }: SkillBarProps) => (
     className="card-glass rounded-xl p-5 hover-lift animate-fade-in-up"
     style={{ animationDelay: `${delay}ms` }}
   >
-    <div className="flex items-center justify-between mb-3">
+    <div className="flex items-center mb-3">
       <div className="flex items-center gap-3">
         <div className="p-2 rounded-lg bg-primary/10 text-primary">{skill.icon}</div>
         <span className="font-medium text-foreground">{skill.name}</span>
       </div>
-      <span className="text-sm font-mono text-primary">{skill.level}%</span>
     </div>
     <div className="skill-bar">
       <div

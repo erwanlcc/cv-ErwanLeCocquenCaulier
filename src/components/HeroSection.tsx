@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Calendar, Code2 } from "lucide-react";
+import { Phone, MapPin, Calendar, Code2, Mail } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -21,17 +21,10 @@ export const HeroSection = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:erwan.lecocquen-caulier@isen-ouest.yncrea.fr"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:glow-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <Mail size={18} />
-                Me contacter
-              </a>
+            <div className="flex flex-wrap gap-4 mt-2">
               <a
                 href="#competences"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-primary/50 text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:glow-primary transition-all duration-300 hover:-translate-y-1"
               >
                 <Code2 size={18} />
                 Voir mes compétences
