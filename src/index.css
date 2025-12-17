@@ -6,13 +6,13 @@
 
 @layer base {
   :root {
-    --background: 220 20% 8%;
+    --background: 225 25% 18%;
     --foreground: 210 40% 98%;
 
-    --card: 220 20% 12%;
+    --card: 225 25% 22%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 20% 12%;
+    --popover: 225 25% 22%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 185 100% 70%;
@@ -21,8 +21,8 @@
     --secondary: 220 20% 16%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 225 20% 28%;
+    --muted-foreground: 215 25% 70%;
 
     --accent: 280 100% 80%;
     --accent-foreground: 210 40% 8%;
@@ -30,8 +30,8 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
+    --border: 225 20% 28%;
+    --input: 225 20% 28%;
     --ring: 185 100% 70%;
 
     --radius: 0.75rem;
@@ -40,12 +40,12 @@
     --glow-primary: 0 0 30px hsl(185 100% 70% / 0.3);
     --glow-accent: 0 0 30px hsl(280 100% 80% / 0.3);
     --gradient-hero: linear-gradient(135deg, hsl(185 100% 70% / 0.15), hsl(280 100% 80% / 0.15));
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 14%), hsl(220 20% 10%));
+    --gradient-card: linear-gradient(145deg, hsl(225 25% 24%), hsl(225 25% 20%));
     --gradient-text: linear-gradient(90deg, hsl(185 100% 70%), hsl(280 100% 80%));
   }
 
   .dark {
-    --background: 220 20% 8%;
+    --background: 225 25% 18%;
     --foreground: 210 40% 98%;
   }
 }
