@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    --background: 25 40% 88%;
-    --foreground: 20 35% 15%;
+    --background: 220 20% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 30 45% 94%;
-    --card-foreground: 20 35% 15%;
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 30 45% 94%;
-    --popover-foreground: 20 35% 15%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 25 95% 55%;
-    --primary-foreground: 35 30% 98%;
+    --primary: 185 100% 50%;
+    --primary-foreground: 220 20% 8%;
 
-    --secondary: 25 35% 80%;
-    --secondary-foreground: 20 35% 20%;
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 25 30% 82%;
-    --muted-foreground: 20 20% 40%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 15 90% 60%;
-    --accent-foreground: 35 30% 98%;
+    --accent: 280 100% 65%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 25 30% 75%;
-    --input: 25 30% 75%;
-    --ring: 25 95% 55%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 185 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom design tokens */
-    --glow-primary: 0 0 30px hsl(25 95% 55% / 0.25);
-    --glow-accent: 0 0 30px hsl(15 90% 60% / 0.25);
-    --gradient-hero: linear-gradient(135deg, hsl(25 95% 55% / 0.1), hsl(15 90% 60% / 0.1));
-    --gradient-card: linear-gradient(145deg, hsl(30 45% 94%), hsl(28 40% 90%));
-    --gradient-text: linear-gradient(90deg, hsl(25 95% 55%), hsl(15 90% 60%));
+    --glow-primary: 0 0 30px hsl(185 100% 50% / 0.3);
+    --glow-accent: 0 0 30px hsl(280 100% 65% / 0.3);
+    --gradient-hero: linear-gradient(135deg, hsl(185 100% 50% / 0.15), hsl(280 100% 65% / 0.15));
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 14%), hsl(220 20% 10%));
+    --gradient-text: linear-gradient(90deg, hsl(185 100% 50%), hsl(280 100% 65%));
   }
 
   .dark {
-    --background: 25 40% 88%;
-    --foreground: 20 35% 15%;
+    --background: 220 20% 8%;
+    --foreground: 210 40% 98%;
   }
 }
 
@@ -58,8 +58,8 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     background-image: 
-      radial-gradient(ellipse at 20% 20%, hsl(25 95% 55% / 0.06) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 80%, hsl(15 90% 60% / 0.06) 0%, transparent 50%);
+      radial-gradient(ellipse at 20% 20%, hsl(185 100% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, hsl(280 100% 65% / 0.05) 0%, transparent 50%);
     background-attachment: fixed;
   }
 
@@ -213,10 +213,10 @@
 
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(25 95% 55% / 0.2);
+    box-shadow: 0 0 20px hsl(185 100% 50% / 0.3);
   }
   50% {
-    box-shadow: 0 0 40px hsl(25 95% 55% / 0.4);
+    box-shadow: 0 0 40px hsl(185 100% 50% / 0.6);
   }
 }
 
